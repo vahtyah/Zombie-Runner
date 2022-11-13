@@ -217,7 +217,6 @@ GameObject:
   - component: {fileID: 6326168994656491833}
   - component: {fileID: 843549566}
   - component: {fileID: 897655419663804677}
-  - component: {fileID: 843549571}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -379,19 +378,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammoAmount: 10
---- !u!114 &843549571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4135550783550439994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a612b0feb71fe547aa9dd443f0cb4fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ammoAmount: 10
 --- !u!1001 &4135550784214851162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -477,6 +463,10 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 897655419663804677}
+    - target: {fileID: 3449040873079284428, guid: ac9dcf0dec904a44f9cfa875c7c4d580, type: 3}
+      propertyPath: fpsCamera
+      value: 
+      objectReference: {fileID: 4135550783548801052}
     - target: {fileID: 8673808386390966903, guid: ac9dcf0dec904a44f9cfa875c7c4d580, type: 3}
       propertyPath: m_Name
       value: Carbine
@@ -532,25 +522,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8673808386391072343, guid: ac9dcf0dec904a44f9cfa875c7c4d580, type: 3}
   m_PrefabInstance: {fileID: 7013538193279339228}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1804422922055420075 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8673808386390966903, guid: ac9dcf0dec904a44f9cfa875c7c4d580, type: 3}
-  m_PrefabInstance: {fileID: 7013538193279339228}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3449040873079284428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1804422922055420075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b677ecaa0d130c442a32a71e546cf0f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fpsCamera: {fileID: 4135550783548801052}
-  zoomedOutFOV: 60
-  zoomedInFOV: 20
-  zoomOutSensitivity: 2
-  zoomInSensitivity: 0.5
